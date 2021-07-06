@@ -4,17 +4,21 @@
 {% block title %}Welcome to OzzyCodes Drone Services!{% endblock %}
 {% block content %}
 
-    <div class="page-header">
-        <h1>OzzyCodes Drone Services, LLC</h1>
-    </div>
-    <p class="lead"></p>
-
     <link rel="stylesheet" href="{{ url_for('static', filename='css/all.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
 
     <nav id="navbar" class="nav">
+        <div class="page-header-nav"
+             style="
+             text-align: left;
+             align-items: center;
+             border-left-width: 0;
+             border-left-style: solid;">
+            <h1>OzzyCodes Drone Services, LLC</h1>
+        </div>
+        <p class="lead"></p>
         <ul class="nav-list">
             <li>
                 <a href="#welcome-section">About</a>
