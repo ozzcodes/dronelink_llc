@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}OzzyCodes Drone Servives, LLC{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.css') }}">
 </head>
 <body>
 {% set messages = get_flashed_messages() %}
@@ -20,7 +21,7 @@
 <nav>
     <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/sites">Sites</a></li>
+        <li><a href="/pages">Sites</a></li>
     </ul>
 </nav>
 </body>

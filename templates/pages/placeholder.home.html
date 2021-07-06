@@ -2,11 +2,37 @@
 {% block title %}Home{% endblock %}
 {% block content %}
 
-<div class="page-header">
-  <h1>OzzyCodes Drone Services, LLC</h1>
-</div>
-<p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and
-    CSS. A fixed navbar has been added within <code>#wrap</code> with
-    <code>padding-top: 60px;</code> on the <code>.container</code>.</p>
+    <!--suppress HtmlDeprecatedAttribute -->
+    <div class="page-header">
+        <h1>OzzyCodes Drone Services, LLC</h1>
+    </div>
+    <head>
+        <link rel="stylesheet" href="../../static/css/all.css">
+        <meta charset="UTF-8">
+        <title>OzzyCodes Drone Services, LLC</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+        <script>
+            window.console = window.console || function (t) {
+            };
+        </script>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+        </script>
+        <style type="text/css">
+            .c1-ui-state-hover {
+                background-color: yellow !important;
+                padding: 5px !important
+            }
+        </style>
+    </head>
+
+    <body translate="no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
+    <p class="lead"></p>
 
 {% endblock %}
