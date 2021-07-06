@@ -74,6 +74,8 @@ body {
     font-weight: 400;
     line-height: 1.4;
     color: var(--main-white);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h1, h2 {
