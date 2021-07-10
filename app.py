@@ -29,24 +29,24 @@ def about():
     return render_template('pages/about2.html')
 
 
-@app.route('/login')
-def login():
-    form = LoginForm(request.form)
-    return render_template('forms/login.html', form=form)
-
-
-@app.route('/register')
-def register():
-    form = RegisterForm(request.form)
-
-    return render_template('forms/register.html', form=form)
-
-
-@app.route('/forgot')
-def forgot():
-    form = ForgotForm(request.form)
-
-    return render_template('forms/forgot.html', form=form)
+# @app.route('/login')
+# def login():
+#     form = LoginForm(request.form)
+#     return render_template('forms/login.html', form=form)
+#
+#
+# @app.route('/register')
+# def register():
+#     form = RegisterForm(request.form)
+#
+#     return render_template('forms/register.html', form=form)
+#
+#
+# @app.route('/forgot')
+# def forgot():
+#     form = ForgotForm(request.form)
+#
+#     return render_template('forms/forgot.html', form=form)
 
 
 @app.route('/contact')
@@ -54,9 +54,10 @@ def contact():
     return render_template('pages/contact_us.html')
 
 
-@app.route('/quote')
+@app.route('/quote', methods=['GET', 'POST'])
 def quote():
-    return render_template('pages/quote.html')
+    form = QuoteForm(request.form)
+    return render_template('pages/quote.html', form=form)
 
 
 # GET and POST requests
@@ -96,4 +97,5 @@ if __name__ == '__main__':
 
 
 def routes():
+
     return None

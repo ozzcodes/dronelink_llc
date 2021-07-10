@@ -1,7 +1,7 @@
 <!doctype html>
 
 {% extends "layout.html" %}
-{% block title %}Welcome to OzzyCodes Drone Services!{% endblock %}
+{% block title %}Welcome to DroneLink LLC!{% endblock %}
 {% block content %}
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/all.css') }}">
@@ -16,7 +16,7 @@
              align-items: center;
              border-left-width: 0;
              border-left-style: solid;">
-            <h1>OzzyCodes Drone Services, LLC</h1>
+            <h1>DroneLink LLC</h1>
         </div>
         <p class="lead"></p>
         <ul class="nav-list">
@@ -35,8 +35,12 @@
         </ul>
     </nav>
 
+    <section id="home-section" class="home-section">
+    <h1>Home</h1>
+    </section>
+
     <section id="welcome-section" class="welcome-section">
-        <h1>Welcome to OzzyCodes Drone Services</h1>
+        <h1>Welcome to DroneLink LLC</h1>
         <p>A complete Air to Ground drone service provider,
             integrating cloud technologies complimented by real-time imaging by drone video. A trusted provider
             throughout the Greater Boston Area, Cape Cod and most of New England.
@@ -46,7 +50,7 @@
     <section id="projects" class="projects-section">
         <h2 class="projects-section-header">Our Services</h2>
         <div class="projects-grid">
-            <a href="https://www.ozzycodesdrones.com/aerial-photography" target="_blank" class="project project-tile">
+            <a href="https://www.dronelinkllc.com/aerial-photography" target="_blank" class="project project-tile">
                 <img class="project-image"
                      src="{{ url_for('static', filename='img/aerial_image.jpeg') }}"
                      alt="aerial-photography">
@@ -56,7 +60,7 @@
                     <span class="code">/&gt;</span>
                 </p>
             </a>
-            <a href="https://www.ozzycodesdrones.com/industrial-inspection" target="_blank"
+            <a href="https://www.dronelinkllc.com/industrial-inspection" target="_blank"
                class="project project-tile">
                 <img class="project-image"
                      src="{{ url_for('static', filename='img/power_line_inspection.png') }}"

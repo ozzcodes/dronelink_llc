@@ -2,10 +2,14 @@
 <!--suppress HtmlDeprecatedAttribute -->
 <html lang="en">
 
+{% extends "layout.html" %}
+{% block title %}Welcome to DroneLink LLC!{% endblock %}
+{% block content %}
+
 <head>
     <link rel="stylesheet" href="../../static/css/all.css">
     <meta charset="UTF-8">
-    <title>OzzyCodes Drone Services, LLC</title>
+    <title>DroneLink LLC</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
     <script>
@@ -32,9 +36,9 @@
 
 <nav id="navbar" class="nav">
     <ul class="nav-list">
-        <li>
-            <a href="#welcome-section">Home</a>
-        </li>
+{#        <li>#}
+{#            <a href="#home-section">Home</a>#}
+{#        </li>#}
         <li>
             <a href="#welcome-section">About</a>
         </li>
@@ -47,8 +51,12 @@
     </ul>
 </nav>
 
+<section id="home-section" class="projects-section">
+    <h2>Home</h2>
+</section>
+
 <section id="welcome-section" class="welcome-section">
-    <h1>Welcome to OzzyCodes Drone Services</h1>
+    <h1>Welcome to DroneLink LLC</h1>
     <p>A complete Air to Ground drone service provider,
         integrating cloud technologies complimented by real-time imaging by drone video. A trusted provider
         throughout the Greater Boston Area, Cape Cod and most of New England.
@@ -58,7 +66,7 @@
 <section id="projects" class="projects-section">
     <h2 class="projects-section-header">Our Services</h2>
     <div class="projects-grid">
-        <a href="https://www.ozzycodesdrones.com/aerial-photography" target="_blank" class="project project-tile">
+        <a href="https://www.dronelinkllc.com/aerial-photography" target="_blank" class="project project-tile">
             <img class="project-image"
                  src="{{ url_for('static', filename='img/aerial_image.jpeg') }}"
                  alt="aerial-photography">
@@ -68,7 +76,7 @@
                 <span class="code">/&gt;</span>
             </p>
         </a>
-        <a href="https://www.ozzycodesdrones.com/industrial-inspection" target="_blank" class="project project-tile">
+        <a href="https://www.dronelinkllc" target="_blank" class="project project-tile">
             <img class="project-image"
                  src="{{ url_for('static', filename='img/power_line_inspection.png') }}"
                  alt="industrial-inspections">
@@ -150,9 +158,9 @@
                             <div><h6 style="color: rgb(255, 255, 255);">Follow Us</h6>
                                 <a title="facebook page"
                                    class="logo facebook-anchor"
-                                   href="https://www.facebook.com/OzzyCodesDrones/"></a>
+                                   href="https://www.facebook.com/dronelinkllc"></a>
                                 <a title="instagram page" class="logo instagram-anchor"
-                                   href="https://www.instagram.com/ozzycodes-drones/"></a>
+                                   href="https://www.instagram.com/dronelinkllc/"></a>
                             </div>
                         </div>
                     </div>
