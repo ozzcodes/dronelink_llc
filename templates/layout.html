@@ -18,11 +18,14 @@
         <h1>{{ self.title() }}</h1>
     {% endblock %}
 </section>
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/pages/">Login</a></li>
-    </ul>
-</nav>
+<footer>
+    <div id="footer">
+        <div class="container">
+            <p>DroneLink LLC &copy; All Rights Reserved.</p>
+            {% block footer %}{% endblock %}
+        </div>
+    </div>
+
+</footer>
 </body>
 </html>

@@ -29,24 +29,24 @@ def about():
     return render_template('pages/about2.html')
 
 
-# @app.route('/login')
-# def login():
-#     form = LoginForm(request.form)
-#     return render_template('forms/login.html', form=form)
-#
-#
-# @app.route('/register')
-# def register():
-#     form = RegisterForm(request.form)
-#
-#     return render_template('forms/register.html', form=form)
-#
-#
-# @app.route('/forgot')
-# def forgot():
-#     form = ForgotForm(request.form)
-#
-#     return render_template('forms/forgot.html', form=form)
+@app.route('/login')
+def login():
+    form = LoginForm(request.form)
+    return render_template('forms/login.html', form=form)
+
+
+@app.route('/register')
+def register():
+    form = RegisterForm(request.form)
+
+    return render_template('forms/register.html', form=form)
+
+
+@app.route('/forgot')
+def forgot():
+    form = ForgotForm(request.form)
+
+    return render_template('forms/forgot.html', form=form)
 
 
 @app.route('/contact')
@@ -95,7 +95,3 @@ if __name__ == '__main__':
     app.debug = True
     app.run()
 
-
-def routes():
-
-    return None
