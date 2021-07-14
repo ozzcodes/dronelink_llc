@@ -61,13 +61,16 @@
 <!--/.header-->
 <div id="#top"></div>
 <section id="home">
-    <div class="banner-container"><img src="../static/img/dronelink_logo.png" alt="banner"/>
+    <div class="banner-container"><img src="../static/img/dronelink-banner.png" alt="banner"/>
         <div class="container banner-content">
             <div class="hero-text animated fadeInDownBig">
                 <h1 class="responsive-headline" style="font-size: 40px;">Welcome to DroneLink LLC!</h1>
-                <p> A complete Air to Ground drone service provider <br/>
-                    integrating cloud technologies complimented by real-time imaging by drone video. A trusted provider
-                    throughout the Greater Boston Area, Cape Cod and most of New England.</p>
+                <p>
+                    A complete Air to Ground drone service provider <br/>
+                    integrating cloud technologies complimented by real-time <br>
+                    imaging by drone video. A trusted provider throughout <br>
+                    the Greater Boston Area, Cape Cod and most of New England.
+                </p>
             </div>
 
             <!-- <a class="hero-button learn-more smoothscroll text-center" href="#features">Learn More</a>-->
@@ -194,10 +197,10 @@
             <!-- item -->
             <div class="col-md-3 text-center"><i class="fa fa-lightbulb-o fa-2x circle"></i>
                 <h3>Surveying <span class="id-color">and Mapping</span></h3>
-                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+                <a href="https://www.dronelinkllc" target="_blank" class="project project-tile">
                     <img class="project-image"
-                         src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png"
-                         alt="project">
+                         src="{{ url_for('static', filename='img/surveying_mapping.jpg') }}"
+                         alt="surveying-mapping">
                     <p class="surveying-and-mapping">
                         <span class="code">&lt;</span>
                         Surveying and Mapping
@@ -209,7 +212,7 @@
 
             <!-- item -->
             <div class="col-md-3 text-center"><i class="fa fa-globe fa-2x circle"></i>
-                <h3>Web <span class="id-color">Designing</span></h3>
+                <h3>Tic-Tac <span class="id-color">Toe</span></h3>
                 <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
                     <img class="project-image"
                          src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png"
@@ -426,7 +429,7 @@
                     <h4>Address:</h4>
                     <address>
                         DroneLink LLC<br>
-                        120 Burkhall St.<br>
+                        120 Burkhall St. Unit A<br>
                         Weymouth, MA 02190 USA <br>
                     </address>
                     <h4>Phone:</h4>
@@ -445,9 +448,11 @@
 </section>
 <footer>
     <div class="container">
-        <div class="social text-center"><a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i
-                class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i
-                class="fa fa-flickr"></i></a> <a href="#"><i class="fa fa-github"></i></a></div>
+        <div class="social text-center">
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+        </div>
         <div class="clear"></div>
         <!--CLEAR FLOATS-->
     </div>

@@ -249,7 +249,7 @@ a:hover {
 .hero-text {
     color: #676e73;
     width: 83%;
-    text-align: center;
+    text-align: left;
     margin: 10% auto 24px auto;
 }
 
@@ -444,17 +444,19 @@ a:hover {
     top: 0;
     left: 0;
     right: 0;
+    margin-left: 0;
 }
 
 .hero-text h1 {
-    color: #fff;
+    color: #6c7884;
     font-size: 6.5em;
-    margin: 2% 0 30px;
+    margin: 0 0;
     line-height: 1.2em;
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 1px #8F8F8F;
     font-weight: 900;
     text-transform: uppercase;
+    text-align: left;
 }
 
 .hero-text h1 {
@@ -471,10 +473,11 @@ a:hover {
 
 .hero-text p {
     font-size: 1.6em;
-    color: #fff;
+    color: rgba(76, 94, 139, 0.77);
     font-style: normal;
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 1px #8F8F8F;
+    text-align: left;
 }
 
 .hero-button {
@@ -1073,6 +1076,7 @@ footer {
     .banner-content p {
         font-size: 1.2em;
         text-shadow: none;
+        text-align: right;
     }
 
     .hero-img {
