@@ -19,7 +19,6 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-
     return render_template('droneLink-index.html')
     # return render_template('index.html')
     # return render_template('pages/placeholder.home.html')
@@ -95,4 +94,3 @@ if not app.debug:
 if __name__ == '__main__':
     app.debug = True
     app.run()
-
