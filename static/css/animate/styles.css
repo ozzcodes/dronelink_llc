@@ -248,9 +248,8 @@ a:hover {
 
 .hero-text {
     color: #676e73;
-    width: 83%;
     text-align: left;
-    margin: 10% auto 24px auto;
+    margin: 7% auto 24px auto;
 }
 
 .hero-text p {
@@ -335,7 +334,8 @@ a:hover {
 .logo {
     font-size: 2.2em;
     text-shadow: none;
-    margin: 8px 0 0 0;
+    margin: unset;
+    float: left;
 }
 
 .logo:hover {
@@ -465,6 +465,7 @@ a:hover {
 
 .hero-text h1 {
     margin: 37px 0 13px;
+
 }
 
 .hero-text h1 {
@@ -474,10 +475,12 @@ a:hover {
 .hero-text p {
     font-size: 1.6em;
     color: rgba(76, 94, 139, 0.77);
-    font-style: normal;
+    font-style: oblique;
     font-family: 'Roboto', sans-serif;
-    text-shadow: 1px 1px 1px #8F8F8F;
+    text-shadow: 3px 3px 3px #8F8F8F;
     text-align: left;
+    /*background-color: #FFC780;*/
+    background-blend-mode: soft-light;
 }
 
 .hero-button {
