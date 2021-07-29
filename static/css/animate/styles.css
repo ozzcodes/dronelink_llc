@@ -311,7 +311,7 @@ a:hover {
 }
 
 #section-strapline {
-    background: #f00bfff;
+    background: #f0bfff;
     line-height: 42px;
     clear: both;
 }
@@ -334,8 +334,10 @@ a:hover {
 .logo {
     font-size: 2.2em;
     text-shadow: none;
-    margin: unset;
-    float: left;
+    padding-top: 0;
+    margin-top: 0;
+    alignment: left;
+    alignment-baseline: top;
 }
 
 .logo:hover {
@@ -591,7 +593,8 @@ object {
 }
 
 #features h3 {
-    font: 18px / 34px;
+    line-height: 34px;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #222;
@@ -737,15 +740,15 @@ object {
     margin-bottom: 30px;
 }
 
-#portfolio {
+#company {
     background: #000;
 }
 
-#portfolio img {
+#company img {
     width: 100%;
 }
 
-#portfolio article p {
+#company article p {
     margin-bottom: 1.45em;
     /*set next row on the baseline*/;
 }
@@ -771,11 +774,11 @@ nav#filter a {
     color: #fff;
 }
 
-.portfolio-items article img {
+.company-items article img {
     width: 100%;
 }
 
-.portfolio-item {
+.company-item {
     display: block;
     position: relative;
     -webkit-transition: all 0.2s ease-in-out;
@@ -784,7 +787,7 @@ nav#filter a {
     transition: all 0.2s ease-in-out;
 }
 
-.portfolio-item img {
+.company-item img {
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
     -o-transition: all 300ms linear;
@@ -792,7 +795,7 @@ nav#filter a {
     transition: all 300ms linear;
 }
 
-.portfolio-item .portfolio-desc {
+.company-item .company-desc {
     display: block;
     opacity: 0;
     position: absolute;
@@ -810,7 +813,7 @@ nav#filter a {
     background: rgba(0, 0, 0, 0.64);
 }
 
-.portfolio-item:hover .portfolio-desc {
+.company-item:hover .company-desc {
     padding-top: 20%;
     height: 100%;
     transition: all 200ms ease-in-out 0s;
@@ -818,18 +821,18 @@ nav#filter a {
     background: rgba(61, 61, 61, 0.67);
 }
 
-.portfolio-item .portfolio-desc a {
+.company-item .company-desc a {
     color: #f49500;
     text-align: center;
     display: block;
 }
 
-.portfolio-item .portfolio-desc a:hover {
+.company-item .company-desc a:hover {
     /*text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);*/
     text-decoration: none;
 }
 
-.portfolio-item .portfolio-desc .folio-info {
+.company-item .company-desc .comp-info {
     top: -20px;
     padding: 30px;
     height: 0;
@@ -837,21 +840,21 @@ nav#filter a {
     position: relative;
 }
 
-.portfolio-item:hover .folio-info {
+.company-item:hover .comp-info {
     height: 100%;
     opacity: 1;
     transition: all 500ms ease-in-out 0s;
     top: 5px;
 }
 
-.portfolio-item .portfolio-desc .folio-info h5 {
+.company-item .company-desc .comp-info h5 {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
     font-size: 1.4em;
 }
 
-.portfolio-item .portfolio-desc .folio-info p {
+.company-item .company-desc .comp-info p {
     color: #ffffff;
     font-size: 12px;
 }
@@ -998,7 +1001,7 @@ footer {
     margin: 0 5px;
 }
 
-.portfolio-item img:hover {
+.company-item img:hover {
     width: 110%;
     height: 110%;
 }
@@ -1106,7 +1109,7 @@ footer {
         padding: 25px 12px;
     }
 
-    .portfolio-item img {
+    .company-item img {
         text-decoration: none;
         display: block;
         width: 330px;
@@ -1122,15 +1125,15 @@ footer {
         -moz-transition-duration: 250ms;
     }
 
-    .portfolio-item:hover .folio-info {
+    .company-item:hover .comp-info {
         top: 0;
     }
 
-    .portfolio-item .portfolio-desc .folio-info {
+    .company-item .company-desc .comp-info {
         padding: 0;
     }
 
-    .portfolio-item .portfolio-desc .folio-info h5 {
+    .company-item .company-desc .comp-info h5 {
         font-size: 1em;
     }
 }
@@ -1224,7 +1227,7 @@ footer {
         margin: 0 0 20px;
     }
 
-    .portfolio-item .portfolio-desc .folio-info h5 {
+    .company-item .company-desc .comp-info h5 {
         font-size: 11px;
     }
 }
@@ -1254,11 +1257,11 @@ footer {
         padding-right: 2%;
     }
 
-    .portfolio-item:hover .folio-info {
+    .company-item:hover .comp-info {
         top: 0;
     }
 
-    .portfolio-item .portfolio-desc .folio-info h5 {
+    .company-item .company-desc .comp-info h5 {
         text-transform: uppercase;
         text-align: center;
         font-weight: normal;
